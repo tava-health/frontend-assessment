@@ -8,7 +8,7 @@ export default createGlobalStyle`
         --text-primary: #374343;
         --text-secondary: rgb(108, 117, 125);
         --border-radius: 8px;
-        --card-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
+        --card-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 10%);
         --light-gray: rgb(206, 212, 218);
     }
     
