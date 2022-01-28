@@ -5,6 +5,8 @@ export interface Employee {
   dateStarted: string;
   department: string;
   quote: string;
+  avatarUrl: string;
+  status: "active" | "inactive";
 }
 
 export type EmployeeCreate = Omit<Employee, "id">;

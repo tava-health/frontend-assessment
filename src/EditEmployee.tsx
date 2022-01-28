@@ -5,6 +5,7 @@ import styled from "styled-components";
 import MockServer from "./assets/MockServer";
 import { Employee } from "./assets/types";
 import * as Yup from "yup";
+import Card from "./Card";
 
 interface ErrorMessageProps extends HTMLAttributes<HTMLDivElement> {
   field: keyof Employee;
@@ -66,60 +67,62 @@ function Form({ employee }: FormProps) {
 
   return (
     <StyledForm onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label htmlFor="firstName">First Name</label>
-        <input
-          name="firstName"
-          type="text"
-          value={values.firstName}
-          placeholder="First Name"
-          onChange={handleChange}
-        />
-        <ErrorMessage field="firstName" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="lastName">Last Name</label>
-        <input
-          name="lastName"
-          type="text"
-          value={values.lastName}
-          placeholder="Last Name"
-          onChange={handleChange}
-        />
-        <ErrorMessage field="lastName" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="dateStarted">Start Date</label>
-        <input
-          name="dateStarted"
-          type="text"
-          value={values.dateStarted}
-          placeholder="Start Date"
-          onChange={handleChange}
-        />
-        <ErrorMessage field="dateStarted" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="department">Department</label>
-        <select
-          name="department"
-          value={values.department}
-          onChange={handleChange}
-        >
-          <option value="Management">Management</option>
-          <option value="Engineering">Engineering</option>
-          <option value="Food Services">Food Services</option>
-          <option value="Operations">Operations</option>
-        </select>
-        <ErrorMessage field="department" />
-      </div>
-      <div className="form-group">
-        <label htmlFor="quote">Quote</label>
-        <textarea name="quote" value={values.quote} onChange={handleChange} />
-        <ErrorMessage field="quote" />
-      </div>
-      <div className="button-container"></div>
-      <Button type="submit">Save</Button>
+      <Card>
+        <div className="form-group">
+          <label htmlFor="firstName">First Name</label>
+          <input
+            name="firstName"
+            type="text"
+            value={values.firstName}
+            placeholder="First Name"
+            onChange={handleChange}
+          />
+          <ErrorMessage field="firstName" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="lastName">Last Name</label>
+          <input
+            name="lastName"
+            type="text"
+            value={values.lastName}
+            placeholder="Last Name"
+            onChange={handleChange}
+          />
+          <ErrorMessage field="lastName" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="dateStarted">Start Date</label>
+          <input
+            name="dateStarted"
+            type="text"
+            value={values.dateStarted}
+            placeholder="Start Date"
+            onChange={handleChange}
+          />
+          <ErrorMessage field="dateStarted" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="department">Department</label>
+          <select
+            name="department"
+            value={values.department}
+            onChange={handleChange}
+          >
+            <option value="Management">Management</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Food Services">Food Services</option>
+            <option value="Operations">Operations</option>
+          </select>
+          <ErrorMessage field="department" />
+        </div>
+        <div className="form-group">
+          <label htmlFor="quote">Quote</label>
+          <textarea name="quote" value={values.quote} onChange={handleChange} />
+          <ErrorMessage field="quote" />
+        </div>
+        <div className="button-container"></div>
+        <Button type="submit">Save</Button>
+      </Card>
     </StyledForm>
   );
 }
@@ -144,9 +147,13 @@ const StyledForm = styled.form`
     textarea,
     select {
       width: 100%;
-      border: 1px solid #838989;
-      padding: 6px;
+      border: 1px solid var(--light-gray);
+      padding: 8px;
       border-radius: 4px;
+
+      &:focus {
+        outline-color: var(--primary-color);
+      }
     }
     padding-bottom: 12px;
   }
@@ -159,8 +166,9 @@ const Button = styled.button`
   background-color: var(--primary-color);
   color: #fff;
   border: none;
-  padding: 8px 16px;
-  border-radius: 12px;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
   cursor: pointer;
 `;
 

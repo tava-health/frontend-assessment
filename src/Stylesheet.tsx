@@ -6,7 +6,10 @@ export default createGlobalStyle`
         --primary-color: #c80203;
         --secondary-color: #ffff99;
         --text-primary: #374343;
+        --text-secondary: rgb(108, 117, 125);
         --border-radius: 8px;
+        --card-shadow: 0 0 0.875rem 0 rgb(41 48 66 / 5%);
+        --light-gray: rgb(206, 212, 218);
     }
     
     html {
@@ -14,7 +17,8 @@ export default createGlobalStyle`
     }
 
     body {
-        font-family: 'Helvetica', 'Arial', sans-serif;
+        background-color: rgb(247, 249, 252);
+        font-family: poppins, 'Helvetica', 'Arial', sans-serif;
         color: var(--text-primary)
     }
 
@@ -26,6 +30,7 @@ export default createGlobalStyle`
 
     html, body, #root {
         height: 100%;
+        overflow: auto;
     }
 
     #root {
@@ -34,6 +39,10 @@ export default createGlobalStyle`
 
     h1, h2, h3, h4, h5 {
         margin: 0 0 8px 0;
+    }
+
+    h1 {
+        margin-bottom: 24px;
     }
 
     a {

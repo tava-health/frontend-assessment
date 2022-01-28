@@ -41,12 +41,17 @@ export default function App() {
 const LeftColumn = styled.aside`
   height: 100%;
   width: 240px;
-  background-color: rgb(237, 242, 244);
+  background-color: #fff;
+  box-shadow: var(--card-shadow);
+  position: sticky;
+  top: 0;
 
   .logo-container {
     padding: 16px;
     width: 100%;
+    text-align: center;
     img {
+      max-width: 150px;
       width: 100%;
     }
   }
@@ -58,14 +63,15 @@ const RightColumn = styled.main`
 `;
 
 const StyledNavLink = styled(NavLink)`
-  border-radius: 8px;
+  border-radius: 6px;
   display: block;
-  padding: 8px 16px;
+  padding: 12px 16px;
   text-decoration: none;
   color: var(---primary-color);
-  margin: 0 4px 4px 4px;
+  font-weight: 500;
+  margin: 0 8px 8px;
   &:hover {
-    background-color: #969e9e;
+    background-color: #eee;
   }
 
   &.active {
