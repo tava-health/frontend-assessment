@@ -51,8 +51,8 @@ function GroupedEmployeesList({ employees }: GroupedEmployeesListProps) {
             <table>
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Start Date</th>
+                  <th style={{ width: 300 }}>Name</th>
+                  <th style={{ width: 180 }}>Start Date</th>
                   <th>Quote</th>
                   <th>Status</th>
                 </tr>
