@@ -1,5 +1,5 @@
-# Tava Frontend Coding Assessment
-Technical assessment for frontend developers
+# Tava's Coding Assessment
+Tava Health - Technical Assessment
 
 # Instructions
 1. Go to the URL below
