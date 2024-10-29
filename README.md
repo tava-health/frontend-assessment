@@ -2,7 +2,7 @@
 
 Welcome to Tava Health’s Technical Assessment.
 
-### Instructions:
+### Instructions
 
 1. Visit the project URL below.
 2. Fork the project (upper right corner in CodeSandbox).
