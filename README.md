@@ -1,11 +1,15 @@
-# Tava's Coding Assessment
-Tava Health - Technical Assessment
+Tava’s Technical Assessment
 
-# Instructions
-1. Go to the URL below
-2. Open the instructions.md
-3. Complete the project
-4. Zip the project up and email it back to the manager or recruiter you are working with
+Welcome to Tava Health’s Technical Assessment.
 
-# URL
-[Tava Heath - Technical Assessment Codesandbox](https://codesandbox.io/p/sandbox/tava-health-technical-assessment-forked-kjrt9l)
+Instructions
+
+	1.	Visit the project URL below.
+	2.	Fork the project (upper right corner in CodeSandbox).
+	3.	Open instructions.md for the full task description.
+	4.	Complete the assessment according to the instructions.
+	5.	Once finished, email the Engineering Leader you’re working with, including the URL to your forked project.
+
+Project URL
+
+[Tava Health - Technical Assessment on CodeSandbox](https://codesandbox.io/p/sandbox/tava-health-technical-assessment-forked-kjrt9l)
